@@ -1,4 +1,3 @@
-
 function updateProfileInfo(profileData) {
     const photo = document.getElementById('profile.photo')
     photo.src = profileData.photo
@@ -14,6 +13,7 @@ function updateProfileInfo(profileData) {
     location.innerText = profileData.location
 
     const phone = document.getElementById('profile.phone')
+    console.log(profileData)
     phone.innerText = profileData.phone
     phone.href = `tel:${profileData.phone}`
 
